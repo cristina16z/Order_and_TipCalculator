@@ -32,28 +32,6 @@ Run
 ```bash
   npm run dev
 ```
-\
-Install Tailwind CSS (not necessary)
-```bash
-  npm install -D tailwindcss postcss autoprefixer
-```
-```bash
-  npx tailwindcss init -p
-```
-\
-Tailwind.config.js in content:[ ]
-```bash
-   "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-```
-\
-Index.css
-```bash
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
 
 
 
