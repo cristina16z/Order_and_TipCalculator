@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+## ABOUT THIS PROJECT 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It's a project made with React + TypeScript + Vite where through a training [course](https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/),
+the calculation of an order is put into practice, focusing more on the calculation of tips.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## REQUIREMENTS
 
-## Expanding the ESLint configuration
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js](https://nodejs.org/en) node 20.14.0 and npm 10.7.0
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/vite)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## INSTALLATION 🔧
+Download project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  git clone https://github.com/cristina16z/Order_and_TipCalculator.git
+```
+\
+Join into the project
+```bash
+  cd Order_and_TipCalculator
+```
+\
+Install
+```bash
+  npm install
+```
+\
+Run
+```bash
+  npm run dev
+```
+\
+Install Tailwind CSS (not necessary)
+```bash
+  npm install -D tailwindcss postcss autoprefixer
+```
+```bash
+  npx tailwindcss init -p
+```
+\
+Tailwind.config.js in content:[ ]
+```bash
+   "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+```
+\
+Index.css
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+
+
+## TECH STACK
+**Framework:** Vite, React, Tailwind CSS, TypeScript + SWC
+
+**Language:** JavaScript, Html, CSS
+
+
+## AUTHORS ✒️
+*[@Cristina16z](https://github.com/cristina16z)*
