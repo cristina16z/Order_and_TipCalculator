@@ -36,6 +36,13 @@ export default function useOrder(){
         setOrder(order.filter(item => item.id !==id))
     }
 
+
+    const placeOrder = () => {
+        console.log('Limpiando...')
+        setOrder([])
+        setTip(0)
+    }
+
   
 
     return{
@@ -43,6 +50,7 @@ export default function useOrder(){
         tip,
         setTip,
         addItem,
-        removeItem
+        removeItem,
+        placeOrder
     }
 }

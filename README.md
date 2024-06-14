@@ -1,3 +1,5 @@
+<img src="BannerReadme.jpg"/>
+
 ## ABOUT THIS PROJECT 🚀
 
 It's a project made with React + TypeScript + Vite where through a training [course](https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/),
@@ -32,8 +34,6 @@ Run
 ```bash
   npm run dev
 ```
-
-
 
 
 ## TECH STACK
