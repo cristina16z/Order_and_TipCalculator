@@ -1,4 +1,5 @@
-import type { Dispatch, SetStateAction } from "react"
+import type { Dispatch } from "react"
+import { OrderActions } from "../reducers/order-reducer"
 
 const tipOptions = [
 
@@ -42,11 +43,11 @@ const tipOptions = [
 
 
 type TipPercentatgeFormProps= {
-  setTip: Dispatch<SetStateAction<number>>,
+  dispatch: Dispatch<OrderActions>
   tip: number
 }
 
-export default function TipPercentatgeForm({setTip, tip} : TipPercentatgeFormProps) {
+export default function TipPercentatgeForm({dispatch, tip} : TipPercentatgeFormProps) {
   return (
     <div>
         <h3 className="font-black text-2xl">Propina:</h3>
@@ -59,7 +60,7 @@ export default function TipPercentatgeForm({setTip, tip} : TipPercentatgeFormPro
                     type="radio"
                     name="tip"
                     value={tipOption.value} /**para que sólo deje seleccionar 1 opción */
-                    onChange={ e => setTip(+e.target.value)}
+                    onChange={ e => dispatch({type:'add-tip', payload: {value: +e.target.value}} ) }
                     checked={tipOption.value === tip } /**en caso de que sean iguales, se habilita */
 
                 />
