@@ -34,7 +34,11 @@ Run
 ```bash
   npm run dev
 ```
-
+\
+Build
+```bash
+  npm run build
+```
 
 ## TECH STACK
 **Framework:** Vite, React, Tailwind CSS, TypeScript + SWC
